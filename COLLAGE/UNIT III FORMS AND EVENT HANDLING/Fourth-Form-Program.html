@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Third Form Program</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function myFunction(){
+				var userName = document.firstForm.txtUserName.value;
+				var pwd = document.firstForm.txtPassword.value;
+				var index = document.firstForm.HighestEducation.selectedIndex;
+				var element = document.firstForm.HighestEducation.options[index].value;
+				
+				document.firstForm.taData.value = userName+" "+pwd+" "+index+" "+element;
+			}
+		</script>
+	</head>
+	<body>
+		<h1>***Form Demonstration***</h1>
+		<form name = "firstForm" action = "first-form-program.html">
+			<table>
+				<tr><td><b>Enter User Name: </b></td><td><input type = "text" name = "txtUserName" value = "Sandip" size = "30"></td></tr>
+				<tr><td><b>Enter Password: </b></td><td><input type = "password" name = "txtPassword" value = "" size = "30"></td></tr>
+				<tr><td><input type = "button" value = "Send Data" onclick = "myFunction()"></td><td><input type = "reset" name = "btnResetData"></td></tr>
+			</table>			 
+
+			<textarea name = "taData" cols = "50" rows = "5">This is the default content in the created TextArea </textarea> <br><br>
+			<hr>
+			<input type = "checkbox" name = "cbSSC" checked> Have you completed SSC? <br>
+			<input type = "checkbox" name = "cbHSC"> Have you completed HSC? <br>
+			<input type = "checkbox" name = "cbDiploma" checked> Have you completed technical Diploma? <br>
+			<hr>
+			<input type = "radio" name = "gender" checked> Male <br>
+			<input type = "radio" name = "gender"> Female <br>
+			<hr>
+			
+			<b>Select your highest Degree/Qualification: </b> <select name = "HighestEducation">
+				<option value = "B.E." selected> B.E
+				<option value = "M.E."> M.E
+				<option value = "Ph.D."> Ph.D.
+				<option value = "Post.Doc."> Post.Doc.
+			</select>
+	
+		</form>
+	</body>
+</html>

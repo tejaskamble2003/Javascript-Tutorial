@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Prompt Box Demo</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function openPromptBox(){
+				let text;
+				let name = window.prompt("Enter name: ","Jayesh Varma");
+				if(name == null || name == "")
+				{
+					text = "You have not entered name or clicked on cancel button.";
+				}
+				else
+				{
+					text = "You have entered name: "+name;
+				}	
+				document.getElementById("pid").innerHTML = text;
+			}	
+		</script>
+	</head>
+	<body>
+		<h2>Prompt box Demo --> Click on the following button to open prompt box</h2>
+		<h3 id="pid"></h3>
+		<button onclick="openPromptBox()">Click Me!!!</button>
+		
+	</body>
+		
+</html>

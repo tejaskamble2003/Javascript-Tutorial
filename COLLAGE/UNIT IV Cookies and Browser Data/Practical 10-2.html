@@ -1,0 +1,30 @@
+<html>  
+	<head>
+		<title>Expt. No. 10 (Program-2)</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function setCookies(){
+				var userName = document.firstForm.txtUserName.value;
+				document.cookie = "userName="+userName+";expires=Thu, 25 Nov 2022 12:00:00 UTC; path=/";
+				alert("Congradulations!!! Persistent Cookie has been created.");
+			}
+			function getCookies(){
+				if(document.cookie.length == 0){
+					alert("Cookies not available");
+				}
+				else{
+					alert("The cookie is set in the browser : "+document.cookie);
+				}
+			}
+		</script>
+	</head>  
+	<body>  
+		<h1>***Expt. No. 10 (Set and get persistent cookie)***</h1>
+		<form name = "firstForm">
+			<b>Enter User Name:</b>
+			<input type = "text" name = "txtUserName" value = "Admin">
+			<br> <br>
+			<input type = "button" name = "btnSetCookie" value = "Set Persistent Cookie" onClick = "setCookies()">
+			<input type = "button" name = "btnGetCookie" value = "Get Cookie" onClick = "getCookies()"> 
+		</fomr>
+	</body>
+</html>

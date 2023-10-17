@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Array of Object</title>
+	</head>
+	<body>
+		<h1>Array of object demonstarion</h1>
+		<script language = "JavaScript" type = "text/javascript">
+			var studentData = [
+			{
+			name: "Pradeep",
+			class: "SYCO",
+			age: 16	
+			},
+			{
+			name: "Sandip",
+			class: "TYCO",
+			age: 17
+			},
+			{
+			name: "Aditya",
+			class: "SYCM",
+			age: 16
+			},
+			{
+			name: "Mayur",
+			class: "TYCM",
+			age: 18
+			}
+		];
+		document.write("<h2>Initially, student data in array of object are: </h2>");
+		for(var i = 0; i<studentData.length; i++){
+			document.write("<h3>"+studentData[i].name+" "+studentData[i].class+" "+studentData[i].age+"</h3>");
+		}
+		document.write("<hr><h2>After adding one object into the existing array of object:</h2>");
+		
+		var newStudent = {name: "Amol", class: "TYCM", age: 20};
+		studentData.unshift(newStudent);
+		
+		for(var i = 0; i<studentData.length; i++){
+			document.write("<h3>"+studentData[i].name+" "+studentData[i].class+" "+studentData[i].age+"</h3>");
+		}
+		document.write("<hr><h2>After adding one more object into the existing array of object at third index:</h2>");
+		var newStudent1 = {name: "Jayesh", class: "TYCM", age: 22};
+		studentData.splice(2,0,newStudent1);
+		for(var i = 0; i<studentData.length; i++){
+			document.write("<h3>"+studentData[i].name+" "+studentData[i].class+" "+studentData[i].age+"</h3>");
+		}
+		</script>
+	</body>
+</html>

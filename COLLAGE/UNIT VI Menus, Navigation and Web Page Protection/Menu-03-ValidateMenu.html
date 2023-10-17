@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Menu Validation</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function validateMenu(){
+				let selIndex = document.firstForm.myMenu.selectedIndex;
+				if(document.firstForm.myMenu.options[selIndex].value == ""){
+					alert("Please select class (in Menu).");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>***Menu Selection Validate***</h1>
+		<form name = "firstForm">
+			<select name = "myMenu">
+				<option value = "">Select Class</option>
+				<option value = "0">SYCO</option>
+				<option value = "1">SYCM</option>
+				<option value = "2">TYCO</option>
+				<option value = "3">TYCM</option>
+			</select>
+			
+			<input type = "button" value = "Submit" onClick = "validateMenu();">
+		</form>
+	</body>
+</html>

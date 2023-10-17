@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>Creating multiple windows</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function creatingMultipleWindows(){
+				for (var i = 1; i<=5; i++){
+					window.open("","NewWindow"+i,"width=400,height=400,top="+i*50+",left="+i*50);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Creating multiple windows by clicking on the following button:</h1>
+		<form name = "first form">
+			<input type = "button" value = "Create Multiple Child Windows" onClick = "creatingMultipleWindows();">
+		</form>
+	</body>
+</html>

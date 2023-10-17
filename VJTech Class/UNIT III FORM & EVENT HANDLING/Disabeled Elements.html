@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<script language="JavaScript" type="text/javascript">
+			function tejas()
+			{
+				window.document.getElementById("text1").disabled=true;
+			}
+			function tejas1()
+			{
+				window.document.getElementById("text1").disabled=false;
+			}
+		</script>
+	</head>
+	<body>
+	 <form name="myform">
+		<input type="text" name="t1" id="text1" size="10" value="tejas">
+		<input type="button" name="b1" id="bd1" value="Disable" onclick="tejas();">
+		<input type="button" name="b2" id="bd2" value="Enable" onclick="tejas1();">
+	 </form>
+	</body>
+</html>

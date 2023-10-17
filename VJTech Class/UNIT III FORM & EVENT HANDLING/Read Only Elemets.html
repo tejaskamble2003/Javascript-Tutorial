@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<script language="JavaScript" type="text/javascript">
+			function tejas()
+			{
+				window.document.getElementById("text1").readOnly=true;
+			}
+			function tejas1()
+			{
+				window.document.getElementById("text1").readOnly=false;
+			}
+		</script>
+	</head>
+	<body>
+	 <form name="myform">
+		<textarea name="t1" id="text1" rows="10" cols="10">tejas</textarea>
+		<input type="button" name="b1" id="bd1" value="Read" onclick="tejas();">
+		<input type="button" name="b2" id="bd2" value="Write" onclick="tejas1();">
+	 </form>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Menu Demonstration</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function openPage(ele){
+				let myPage = ele.options[ele.selectedIndex].value;
+				if(myPage!==""){
+					window.location = myPage;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>***Menu Demonstration: Create***</h1>
+		<form name = "firstForm">
+			<select name = "myMenu" onChange = "openPage(this);">
+				<option value = "Menu-01-CreateMenu.html">Select Research Area</option>
+				<option value = "bdata.html">Big Data Analytics</option>
+				<option value = "ns.html">Network Security</option>
+			</select>
+		</form>
+	</body>
+</html>

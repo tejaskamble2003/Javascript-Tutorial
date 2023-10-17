@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<script language = "JavaScript" type = "text/javascript">
+			function searchPattern(){
+				let readString = prompt("Enter String: ","");
+				let pattern = /nagar/;
+				let result = readString.search(pattern);
+				if(result == -1){
+					alert("Pattern is not found in the entered string.");
+				} 
+				else{
+					alert("Pattern is found in the entered string at index: "+result);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>***Demonstration of Reg. Expression***</h1>
+		<h3>Click on the following button</h3>
+		<form name = "firstForm">
+			<input type = "button" value = "Click Me!!!" onClick = "searchPattern();">
+		</form>
+	</body>
+</html>

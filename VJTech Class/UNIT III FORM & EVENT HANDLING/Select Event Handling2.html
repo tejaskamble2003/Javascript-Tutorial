@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<script language="JavaScript" type="text/javascript">
+			function tejas()
+			{
+				var str=window.document.forms.myform.elements[0].options[window.document.forms.myform.elements[0].selectedIndex].value;
+				alert("you Have selected "+str);
+			}
+		</script>
+	</head>
+	<body>
+		<form name="myform">
+		<select onchange="tejas();">
+				<option value="c lang">C Language</option>
+				<option value="c++ lang">C++ Language</option>
+				<option value="java lang">JAVA Language</option>
+				<option value="android">Android</option>
+			</select>
+		</form>
+	</body>
+</html>

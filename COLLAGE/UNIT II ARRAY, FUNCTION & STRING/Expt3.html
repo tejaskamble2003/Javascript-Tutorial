@@ -1,0 +1,33 @@
+<html>
+	<head><title>Expt. No. 3</title></head>
+	<body>
+		<h1>Expt. No. 3 based on Array</h1>
+		<script language = "JavaScript" type = "text/javascript">
+			let studentName = ["Om", "Mahesh", "Ritesh", "Pradeep", "Shivaji"];
+			document.write("<h2>Initially, elements in an array are: </h2>");
+			for(var i = 0; i < studentName.length; i++){
+				document.write("<h3>"+(i+1)+") "+studentName[i]+"</h3>");
+			}
+			document.write("<h3> Length of array is: "+studentName.length+"</h3><hr>");
+			document.write("<h2> Remove first and last element from array using shift() and pop() methods: ");
+			studentName.shift();
+			studentName.pop();
+			for(var i = 0; i < studentName.length; i++){
+				document.write("<h3>"+(i+1)+") "+studentName[i]+"</h3>");
+			}
+
+			document.write("<hr><h2> Add new elements at first and last into an array using unshift() and push() methods: ");
+			studentName.unshift("Bhushan");
+			studentName.push("Virat");
+			for(var i = 0; i < studentName.length; i++){
+				document.write("<h3>"+(i+1)+") "+studentName[i]+"</h3>");
+			}
+			
+			document.write("<hr><h2> Sorted elemenets of array using sort() method: ");
+			studentName.sort();
+			for(var i = 0; i < studentName.length; i++){
+				document.write("<h3>"+(i+1)+") "+studentName[i]+"</h3>");
+			}
+		</script>
+	</body>
+</html>

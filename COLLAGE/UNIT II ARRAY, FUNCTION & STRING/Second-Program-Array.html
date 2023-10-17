@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>Array Demonstration</title>
+	</head>
+	<body>
+		<h1>***Working on Array***</h1><hr>
+		<script language = "JavaScript" type = "text/javascript">
+			var studentMarks = [55, 67, 89, 72, 33, 45];
+			document.write("<h1>Before changing element of array</h1>");
+			for(var i = 0; i<studentMarks.length;i++){
+				document.write(studentMarks[i]+" ");
+			}		
+			document.write("<h1>After changing second element of array</h1>");
+			studentMarks[1] = 76;
+			for(var i = 0; i<studentMarks.length;i++){
+				document.write(studentMarks[i]+" ");
+			}
+			document.write("<h1>Adding new element into array (at-the-end)</h1>");
+			studentMarks.push("99");
+			for(var i = 0; i<studentMarks.length;i++){
+				document.write(studentMarks[i]+" ");
+			}
+			document.write("<h1>Remove an element from array (from-end)</h1>");
+			var removedElement = studentMarks.pop();
+			for(var i = 0; i<studentMarks.length;i++){
+				document.write(studentMarks[i]+" ");
+			}
+			document.write("<h1>Remove an element from array (from-start)</h1>");
+			var removedElement = studentMarks.shift();
+			for(var i = 0; i<studentMarks.length;i++){
+				document.write(studentMarks[i]+" ");
+			}
+			document.write("<h1>Add an element into an array (At-start)</h1>");
+			studentMarks.unshift("88");
+			for(var i = 0; i<studentMarks.length;i++){
+				document.write(studentMarks[i]+" ");
+			}
+
+			document.write("<h1>Add an element into an array (At-second index)</h1>");
+			studentMarks.splice(2,0,"91");
+			for(var i = 0; i<studentMarks.length;i++){
+				document.write(studentMarks[i]+" ");
+			}
+
+			document.write("<h1>Join Method: Use</h1>");
+			var joinDataWithStar = studentMarks.join("|");
+			document.write(joinDataWithStar);
+
+			document.write("<h1>Concat two array</h1>");
+			
+			var girls = ["Shivadnya", "Ovi"];
+			var boys = ["Aditya", "Jayesh"];
+			var child = girls.concat(boys);
+			for(var i = 0; i<child.length;i++){
+				document.write(child[i]+" ");
+			}
+			document.write("<h1>After sorting the elements of array</h1>");
+			child.sort();
+			for(var i = 0; i<child.length;i++){
+				document.write(child[i]+" ");
+			}
+			document.write("<h1>Integer Array before sorting the elements</h1>");
+			var IntegerArray = new Array(10,33,3,43,5,9,25);
+			for(var i = 0; i<IntegerArray.length;i++){
+				document.write(IntegerArray[i]+" ");
+			}
+			function numCompare(a,b){
+				return a-b;
+			}
+			document.write("<h1>Integer Array after sorting the elements</h1>");
+			var IntegerArray = new Array(10,33,3,43,5,9,25);
+			var sortedArray = IntegerArray.sort(numCompare);
+			for(var i = 0; i<IntegerArray.length;i++){
+				document.write(IntegerArray[i]+" ");
+			}
+		</script>
+	</body>
+</html>

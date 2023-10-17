@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Expt. No. 11</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function createNewPage(){
+				let newPage = window.open("","myWindow","width=400,height=400");
+				newPage.document.write("<html><head><title>Child Page Created</title></head>");
+				newPage.document.write("<body><h1>This child page is created using window.open() method.</h1></body></html>");
+			}
+		</script>
+	</head>
+	<body>
+		<h1>***Expt. No. 11 Create a child window by clicking on the following window***</h1>
+		<form name = "firstForm">
+			<input type = "button" value = "Create New Web Page" onClick = "createNewPage();">
+		</form>
+	</body>
+</html>
+

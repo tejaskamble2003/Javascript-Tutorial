@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<Head>
+    <title>String Concatation</title>
+</Head>
+
+<body>
+    <h1>String Concatation</h1>
+    <Script language="JavaScript" type="text/javascript">
+        var str1 = "Tejas";
+        var str2 = "Kamble";
+        var str3 = str1 + "" + str2;
+        document.write("<h2>" + str3 + "</h2><br>")
+
+        const person = {
+            firstName:"Nitin",
+            lastName : "Pawar",
+            age: 20,
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        //  var name =person.fullName()
+        document.write("<h2>" +person.fullName()+ "</h2><br>")
+
+    </script>
+</body>
+
+</html>

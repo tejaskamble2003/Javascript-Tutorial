@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Variable Declaration</title>
+	</head>
+	<body>
+		<h1>Array demonstration</h1>
+		<script language = "JavaScript" type = "text/javascript">
+			
+			const studentName = ["Bhushan", "Sandip", "Pradeep", "Vivek", "Atul"];
+			document.write("<h3>Number of elements in Array: "+studentName.length+"</h3>");
+			document.write("<h4>Elements in Array are: "+studentName+"</h4>");
+			document.write("<h4>Adding new element into array: <h4>");
+			studentName.push("Mahesh");
+			document.write("<h4>After adding one element into Array: "+studentName+" and length of array is: "+studentName.length+"</h4>");
+			
+			studentName.shift();
+
+			document.write("<h4>After removing first element: "+studentName+"</h4>");
+			
+			studentName.pop();
+
+			document.write("<h4>After removing last element: "+studentName+"</h4>");
+
+			studentName.splice(1,2);
+
+			document.write("<h4>After removing middle elements: "+studentName+"</h4>");
+			
+			studentName.push("Mahesh");
+	
+			studentName.push("Pradeep");
+
+			studentName.push("Atul");
+			document.write("<table border=1><th>Name</th>");
+			for(var i = 0; i<studentName.length; i++)
+			{
+				document.write("<tr><td>"+studentName[i]+"</td></tr>");		
+			}			
+			document.write("</table>");
+		</script>
+	</body>
+</html>

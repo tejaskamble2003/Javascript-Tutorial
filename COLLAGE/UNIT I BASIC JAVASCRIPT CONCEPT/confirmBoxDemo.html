@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Confirm Box Demo</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function openConfirmBox(){
+				let text;
+				if(window.confirm("Do you want to proceed?"))
+				{
+					text = "Thank you for reply. You are ready to proceed";
+				}
+				else
+				{
+					text = "Thank you for reply. You have cancelled.";		
+				}
+				document.getElementById("pid").innerHTML = text;
+			}
+		</script>
+	</head>
+	<body>
+		<h2>Confirm box Demo --> Click on the following button to open confirm box</h2>
+		<h3 id="pid"></h3>
+		<button onclick="openConfirmBox()">Click Me!!!</button>
+		
+	</body>
+		
+</html>

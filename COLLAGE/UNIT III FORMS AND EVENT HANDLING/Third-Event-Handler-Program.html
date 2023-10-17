@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Second Event Handler Program</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function makeBig(img){
+				img.style.height = "150px";
+				img.style.width = "150px"
+			}
+			
+			function makeNormal(img){
+				img.style.height = "32px";
+				img.style.width = "32px"
+			}	
+		</script>
+	</head>
+	<body>
+		<img src = "smiley.png" height = "32" width = "32" onMouseMove = "makeBig(this);" onMouseOut = "makeNormal(this);">
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Demonstration of Location object</title>
+	</head>
+	<body>
+		<h1>***Demonstration of the Location object***</h1>
+		<form name = "firstForm">
+			<input type = "button" value = "Redirect" onClick = "myFunction();">
+		</form>
+		<script language = "JavaScript" type = "text/javascript">
+			document.write("<b>Complete path: </b>"+window.location.href);
+			document.write("<br><b>Host Name: </b>"+window.location.hostname);
+			document.write("<br><b>Path: </b>"+window.location.pathname);
+			document.write("<br><b>Protocol: </b>"+window.location.protocol);
+			function myFunction(){
+				window.location.assign("http://www.gpnagar.ac.in");
+			}
+		</script>
+
+	</body>
+</html>

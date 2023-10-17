@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title>String Demonstration</title>
+	</head>
+	<body>
+		<h1>String demonstration</h1><hr>
+		<script language = "JavaScript" type = "text/javascript">
+			let instituteName = "Government Polytechnic Ahmednagar";
+			document.write("<h2>Institute Name: "+instituteName+"</h2>");
+			var len = instituteName.length;
+			document.write("<h2>Length of String is : "+len+"</h2><hr>");
+			
+			document.write("<h2>Convert String into Upper case using toUpperCase() method</h2>")
+			let changedString = instituteName.toUpperCase();
+			document.write("<h2>Upper case string: "+changedString+"</h2><hr>");
+	
+			document.write("<h2>Convert String into Lower case using toLowerCase() method</h2>")
+			changedString = instituteName.toLowerCase();
+			document.write("<h2>Lower case string is: "+changedString+"</h2><hr>");
+			
+			document.write("<h2>Get a character at index 2 from the existing string:</h2>")
+			changedString = instituteName.charAt(2);
+			document.write("<h2>Character at index 2 is: "+changedString+"</h2><hr>");
+
+			document.write("<h2>Extract a particular part of string using slice() method:</h2>")
+			changedString = instituteName.slice(11,22);
+			document.write("<h2>Extracted part of String is : "+changedString+"</h2><hr>");
+
+			document.write("<h2>Extract a particular part of string using substring() method:</h2>")
+			changedString = instituteName.substring(11,22);
+			document.write("<h2>Extracted part of String is : "+changedString+"</h2><hr>");
+
+			document.write("<h2>Extract a particular part of string using substr() method:</h2>")
+			changedString = instituteName.substr(11,12);
+			document.write("<h2>Extracted part of String is : "+changedString+"</h2><hr>");
+
+			document.write("<h2>Replace particular word from the string using replace() method:</h2>")
+			changedString = instituteName.replace("Ahmednagar","Pune");
+			document.write("<h2>Replaced string is : "+changedString+"</h2><hr>");
+
+			document.write("<h2>join two strings using concat() method:</h2>")
+			let departmentName = "Computer Engineering";
+			let collegeName = "Government Polytechnic Ahmednagar";
+			let concatString = departmentName.concat(" "+collegeName);
+			document.write("<h2>Joined string is : "+concatString+"</h2><hr>");
+
+
+			document.write("<h2>Remove the whitespaces from string using trim() method:</h2>")
+			let departmentName1 = "         Computer Engineering     ";
+			let trimmedString = departmentName1.trim();
+			document.write("<h2>Trimmed string is : "+trimmedString+"</h2><hr>");
+
+
+			document.write("<h2>Remove the whitespaces from string using trim() method:</h2>")
+			let text = "5";
+			let var_padStart = text.padStart(5,0);
+			let var_padEnd = text.padEnd(5,0);
+			document.write("<h2>Padding Zero at start : "+var_padStart+"</h2>");
+			document.write("<h2>Padding Zero at end : "+var_padEnd+"</h2><hr>");
+
+			document.write("<h2>Converting particular index character to unicode:</h2>")
+			let deptName = "Computer Technology";
+			let a = deptName.charCodeAt(9);
+			document.write("<h2>Unicode of charcter is : "+a+"</h2><hr>");
+			
+			let charcterFromUnicode = String.fromCharCode(72, 69, 76, 76, 79);
+
+			document.write("<h2>Characters from unicode are: "+charcterFromUnicode+"</h2>");
+
+			document.write("<hr><h2>Demonstration split() method:</h2>")
+			let name = "Jayesh Shivaji Pawar";
+			let data = name.split(" ");
+			document.write("<h2>First Name: "+data[0]+" Middle Name: "+data[1]+" Last Name: "+data[2]+"</h2><hr>");
+		</script>
+	</body>	
+</html>

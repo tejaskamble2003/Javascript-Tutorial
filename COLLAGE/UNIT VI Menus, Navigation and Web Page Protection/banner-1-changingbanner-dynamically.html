@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Dynamic Message for Status Bar</title>
+		<script language = "JavaScript" type = "text/javascript">
+			MyBanner = new Array("smiley.png", "divide.png", "plus.png", "minus.png");
+			bannerCount = 0;
+			function displayBanner(){
+				if(document.images){
+					bannerCount++;
+					if(bannerCount == MyBanner.length){
+						bannerCount = 0;
+					}
+					document.imgBanner.src = MyBanner[bannerCount];
+					setTimeout(displayBanner,1000);
+				}
+			}
+		</script> 
+	</head>
+	<body onLoad = "displayBanner();">
+		<center>
+			<h1>***Banner Demonstration***</h1>
+			<img src = "smiley.png" width = "500" height = "400" name = "imgBanner">
+		</center>
+	</body>
+</html>                                                                                               

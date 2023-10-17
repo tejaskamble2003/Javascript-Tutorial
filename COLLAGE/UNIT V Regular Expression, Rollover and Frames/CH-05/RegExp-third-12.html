@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<script language = "JavaScript" type = "text/javascript">
+			function validatePattern(){
+				let readString = prompt("Enter String: ","");
+				let pattern = /[12345][A-D]{3}\d{3}[a-z]{3}\d{4}/;
+				let result = readString.match(pattern);
+				if(result == null){
+					alert("You have entered wrong string.");
+				}
+				else{
+					alert("You have entered correct string: "+result);
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+		<h1>***Demonstration of Reg. Expression***</h1>
+		<h3>Click on the following button</h3>
+		<form name = "firstForm">
+			<input type = "button" value = "Click Me!!!" onClick = "validatePattern();">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Third Form Program</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function myFunction(){
+				var userName = document.firstForm.txtUserName.value;
+				var pwd = document.firstForm.txtPassword.value;
+				document.firstForm.taData.value = userName+" "+pwd;
+			}
+		</script>
+	</head>
+	<body>
+		<h1>***Form Demonstration***</h1>
+		<form name = "firstForm" action = "first-form-program.html">
+			<table>
+				<tr><td><b>Enter User Name: </b></td><td><input type = "text" name = "txtUserName" value = "Sandip" size = "30"></td></tr>
+				<tr><td><b>Enter Password: </b></td><td><input type = "password" name = "txtPassword" value = "" size = "30"></td></tr>
+				<tr><td><input type = "button" value = "Send Data" onclick = "myFunction()"></td><td><input type = "reset" name = "btnResetData"></td></tr>
+			</table>			 
+
+			<textarea name = "taData" cols = "50" rows = "5">This is the default content in the created TextArea </textarea> <br><br>
+		</form>
+	</body>
+</html>
+

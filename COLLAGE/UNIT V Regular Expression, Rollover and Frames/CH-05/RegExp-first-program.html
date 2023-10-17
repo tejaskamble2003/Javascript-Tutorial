@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Checking Digit</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function checkDigit(){
+				let readString = prompt("Enter String","");
+				let pattern = /[0-9]/;
+				let result = readString.match(pattern);
+				if(result == null){
+					alert("String does not contains digit.");
+				}
+				else{
+					alert("Digit is found in the string.");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>***Demonstration of Regular Expression (Checking digit)***</h1>
+		<h3>Check entered string cotains digit or not by clicking on the following button:</h3>
+		<form name = "firstForm">
+			<input type = "button" value = "Search String" onClick = "checkDigit();">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Dynamic Message for Status Bar</title>
+		<script language = "JavaScript" type = "text/javascript">
+			MySlides = new Array("smiley.png", "divide.png", "plus.png", "minus.png");
+			i = 0;
+			function moveSlide(slideNo){
+				i = i + slideNo;
+				if(i>MySlides.length-1){
+					i = 0;
+				}
+				if(i<0){
+					i = MySlides.length-1;
+				}
+				document.imgBanner.src = MySlides[i];
+			}
+		</script> 
+	</head>
+	<body>
+		<center>
+			<h1>***Banner Demonstration***</h1>
+			<img src = "smiley.png" width = "500" height = "400" name = "imgBanner">
+			<br><br>
+			<input type = "button" value = "Back" onClick = "moveSlide(-1);">
+			<input type = "button" value = "Forward" onClick = "moveSlide(1);">
+		</center>
+	</body>
+</html>                                                                                               

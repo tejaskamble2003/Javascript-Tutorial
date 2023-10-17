@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Second Event Handler Program</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function getCoordinate(e){
+				var x = e.clientX;
+				var y = e.clientY;
+				document.getElementById("demo").innerHTML = "Coordinates are: "+x+" "+y;
+			}
+			function clearMessage(){
+				document.getElementById("demo").innerHTML = "";
+			}
+		</script>
+	</head>
+	<body>
+		<img border = "0" src = "smiley.png" height = "150" width = "150" onMouseMove = "getCoordinate(event);" onMouseOut = "clearMessage();">
+		<p id = "demo"></p>
+	</body>
+</html>

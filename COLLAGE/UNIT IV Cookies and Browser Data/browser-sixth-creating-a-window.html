@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Creating multiple windows</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function creatingPage(){
+				let newWebPage = window.open("","NewWindow","height=600,width=600");
+				newWebPage.document.write("<html><head><title>Creating a child web page</title></head>");
+				newWebPage.document.write("<body><h1>We have created a new child web page</h1></body></html>");;
+				
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Creating a new web page by clicking on the following button:</h1>
+		<form name = "first form">
+			<input type = "button" value = "Create a new web page" onClick = "creatingPage();">
+		</form>
+	</body>
+</html>

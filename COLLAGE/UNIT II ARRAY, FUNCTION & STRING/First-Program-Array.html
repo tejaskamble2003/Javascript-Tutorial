@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Array Demonstration</title>
+	</head>
+	<body>
+		<h1>***Working on Array***</h1><hr>
+		<script language = "JavaScript" type = "text/javascript">
+			document.write("<h3>First way to create an array using new keyword</h3>");
+			var numArray = new Array(5);
+			numArray[0] = 10;
+			numArray[1] = 20;
+			numArray[2] = 30;
+			numArray[3] = 40;
+			numArray[4] = 50;
+			document.write("<h3>"+numArray+"</h3>"); 
+			
+			document.write("<hr><h3>Second way to create an array using new keyword with initialization while declaration.</h3>");
+			var numArrayWithInit = new Array(5,15,25,35,45);
+			document.write("<h3>"+numArrayWithInit+"</h3>"); 	
+			
+			document.write("<hr><h3>Another way to create an array.</h3>");
+			var anotherWayArray = ["Sandip", "Pradeep", "Ritesh"];
+			document.write("<h3>"+anotherWayArray+"</h3>");
+
+			document.write("<hr><h3>Another way to create an array (multi-line).</h3>");
+			var multiLineWayArray = [
+			"Sandip",
+			"Pradeep", 
+			"Ritesh"];
+			document.write("<h3>"+multiLineWayArray+"</h3>");
+
+
+			document.write("<hr><h3>One more way to create an array .</h3>");
+			var oneMoreWayArray = [];
+			oneMoreWayArray[0] = "Sandip1";
+			oneMoreWayArray[1] = "Pradeep1"; 
+			oneMoreWayArray[2] = "Ritesh1";
+			document.write("<h3>"+oneMoreWayArray+"</h3>");
+		</script>
+	</body>
+</html>

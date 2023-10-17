@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Demonstration of Window methods</title>
+		<script language = "JavaScript" type = "text/javascript">
+			let newWindow;
+			function openingWindow(){
+				newWindow = window.open("","NewWindow","height=400,width=400");
+			}
+			function bluringWindow(){
+				newWindow.blur();
+			}
+			function focusingWindow(){
+				newWindow.focus();
+			}
+			function closingWindow(){
+				newWindow.close();
+			}
+		</script>
+	</head>
+	<body>
+		<h1>***Demonstration of Four methods of window: open(), blur(), focus(), and close()***</h1>
+		<form name = "firstForm">
+			<input type = "button" value = "Open Window" onClick = "openingWindow();"><br>
+			<input type = "button" value = "Blur Window" onClick = "bluringWindow();"><br>
+			<input type = "button" value = "Focus Window" onClick = "focusingWindow();"><br>
+			<input type = "button" value = "Close Window" onClick = "closingWindow();"><br>
+		</form>
+	</body>
+</html>

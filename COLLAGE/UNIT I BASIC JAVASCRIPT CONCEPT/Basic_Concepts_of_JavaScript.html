@@ -1,0 +1,56 @@
+<!--Write a Basic Concepts of JavaScript-->
+<!DOCLTYPE HTML>
+	<html language="english">
+
+	<head>
+		<title>Basic Concept Of JavaScript</title>
+	</head>
+
+	<body>
+		<h1>Basic JavaScript Concepts<h1>
+				<table border=6 align="centre">
+					<script language="JavaScript" type="text/javascript">
+						var a = 10, b = 20, c;
+						document.write("<h4>Value of a=" + a + "<br>b=" + b + "</h4>");
+						document.write("<h2>If Uses</h2>");
+						if (a > b) {
+							document.write("a is Greatest no");
+						}
+						else {
+							document.write("b is Greatest no");
+						}
+						d = new Date();
+						ch = d.getMonth();
+						document.write("<br>" + ch);
+						document.write("<h2> Uses Of Loop</h2>");
+						document.write("<th>no</th><th>Squre</th>");
+						for (var i = 0; i <= 10; i++) {
+							document.write("<tr><td>" + i + "</td><td>" + i * i + "</td></tr>");
+						}
+						document.write("<hr>");
+						var i = 11;
+						while (i <= 20) {
+							if (i == 15) {
+								// var x=i;
+								// continue;
+								break;
+							}
+							document.write("<tr><td>" + i + "</td><td>" + i * i + "</td></tr>");
+							i++;
+						}
+						var i = 15;
+						do {
+							// if(i==5)
+							// {
+							// 	var x=i;
+							// 	continue;
+							// }
+							document.write("<tr><td>" + i + "</td><td>" + i * i + "</td></tr>");
+							i++;
+						} while (i <= 20);
+			//  document.write("value of Missing"+x);
+					</script>
+				</table>
+	</body>
+
+	</html>

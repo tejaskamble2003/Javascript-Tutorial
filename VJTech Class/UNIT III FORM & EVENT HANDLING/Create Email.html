@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script language="JavaScript" type="text/javascript">
+			function tejas()
+			{
+				var fname=window.document.forms.myform.elements[0].value;
+				var lname=window.document.forms.myform.elements[1].value;
+				var fn=fname.toLowerCase();
+				var ln=lname.toLowerCase();
+				window.document.forms.myform.elements[2].value=fn+ln+"@gmail.com";
+			}
+		</script>
+	</head>
+	<body>
+		<form name="myform">
+			Enter First Name:<input type="text" name="fn" id="t1" size="20"><br><br>
+			Enter Last Name:<input type="text" name="ln" id="t2" size="20"><br><br>
+			Gamil:<input type="text" name="gmail" id="t3" size="40"><br><br>
+			<input type="button" name="b1" id="bd" value="Create Gmail" onclick="tejas()">
+		</form>
+	</body>
+</html>

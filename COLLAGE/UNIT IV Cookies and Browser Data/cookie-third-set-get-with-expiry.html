@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Third Cookie Program</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function setCookies(){
+				let name = document.firstForm.txtName.value;
+				document.cookie = "user-name="+name+"; expires=Thu, 18 Dec 2020 12:00:00 UTC; path=/";
+				alert("Congradulations!!! The cookie has been set.");
+			}
+			function getCookies(){
+				if(document.cookie.length == 0){
+					alert("Cookie is not available");
+				}
+				else{
+					alert("The cookie in the browser is: "+document.cookie);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>***Demonstration of Cookies: Setting and Getting cookies with expiry date by clicking on buttons***</h1>
+		<form name = "firstForm">
+			<input type = "text" name = "txtName">
+			<input type = "button" name = "btnSet" value = "Set Cookie" onClick = "setCookies();">
+			<input type = "button" name = "btnGet" value = "Get Cookie" onClick = "getCookies();">
+		</form>
+	</body>
+</html>

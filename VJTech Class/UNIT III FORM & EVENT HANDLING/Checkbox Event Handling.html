@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<script language="JavaScript" type="text/javascript">
+			function tejas()
+			{
+				if(window.document.forms.myform.elements[0].checked==true)
+				{
+					var str=window.document.forms.myform.elements[0].value;
+					alert("You have Selected "+str);
+				}				
+				if(window.document.forms.myform.elements[0].checked==true)
+				{
+					var str=window.document.forms.myform.elements[0].value;
+					alert("You have Selected "+str);
+				}				
+				if(window.document.forms.myform.elements[1].checked==true)
+				{
+					var str=window.document.forms.myform.elements[1].value;
+					alert("You have Selected "+str);
+				}			
+				if(window.document.forms.myform.elements[2].checked==true)
+				{
+					var str=window.document.forms.myform.elements[2].value;
+					alert("You have Selected "+str);
+				}
+				if(window.document.forms.myform.elements[3].checked==true)
+				{
+					var str=window.document.forms.myform.elements[3].value;
+					alert("You have Selected "+str);
+				}
+				else
+				{
+					alert("Please select checkbox");
+				}
+			}
+		</script>
+	</head>
+	<body>
+	 <form name="myform">
+		<input type="checkbox" name="c1" id="cb1" value="Apple">Apple
+		<input type="checkbox" name="c2" id="cb2" value="banana">Banana
+		<input type="checkbox" name="c3" id="cb3" value="grapes">Grapes
+		<input type="checkbox" name="c4" id="cb4" value="orange">Orange
+		<input type="button" name="b1" id="bd1" value="Click Me" onclick="tejas();">
+	 </form>
+	</body>
+</html>

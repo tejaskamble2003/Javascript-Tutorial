@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Variable Declaration</title>
+</head>
+
+<body>
+    <h1>Variable demonstration</h1>
+    <script language="JavaScript" type="text/javascript">
+        var a = 5, b = 7;
+        document.write("<h2>Before Swapping: Value of a is " + a + " and b is " + b + "</h2><br>");
+        a = a ^ b;
+        b = a ^ b;
+        a = a ^ b;
+        document.write("<h2>After Swapping: Value of a is " + a + " and b is " + b + "</h2><br>");
+
+        var name = "Government Polytechnic", city = "Ahmednagar";
+        var completeName = name + " " + city;
+        document.write("<h2>Institute Name: " + completeName + "</h2>");
+
+        let c = 5, d = 7;
+        document.write("<h2>Before Swapping: Value of c is " + c + " and d is " + d + "</h2><br>");
+        c = c ^ d;
+        d = c ^ d;
+        c = c ^ d;
+        document.write("<h2>After Swapping: Value of c is " + c + " and d is " + d + "</h2><br>");
+
+        var a = 30;
+        document.write("a is " + a);
+
+
+
+        var x = 10;
+        let y = 10;
+
+        document.write("<h3>Value of x:" + x + " and value of y: " + y + "</h3>");
+        {
+            var x = 20;
+            let y = 20;
+            document.write("<h3>In block: Value of x:" + x + " and value of y: " + y + "</h3>");
+        }
+        document.write("<h3>After block: Value of x:" + x + " and value of y: " + y + "</h3>");
+
+        const data = 23;
+        document.write("<h3>const data value is " + data + "</h3>");
+
+        const studentName = ["Sandip", "Jayesh", "Aditya", "Pratik"];
+        document.write("<h3>Name of students: " + studentName + "</h3>");
+
+        studentName.push("Pradeep");
+        studentName.splice(2, 1)
+        // studentName.shift("Sandip")
+        // studentName.pop("Pratik")
+        // studentName.shift();
+        // studentName.pop();
+        document.write("<h3>Name of students after reassinging: " + studentName + "</h3>");
+
+
+    </script>
+</body>
+
+</html>

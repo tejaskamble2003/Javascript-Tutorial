@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Variable Declaration</title>
+    </head>
+    <body>
+        <h1>Object Demostration</h1>
+        <script lang="JavaScript" type="text/javascript">
+            const person={fname:"Tejas",lname:"Kamble",age:18};
+            document.write("<h3> First name of Person is "+person.fname+"</h3>");
+            const person1={
+                fname:"Raj",
+                lname:"Kumar",
+                gender:"male",
+                age:18,
+                fullName:function()
+                {
+                    return this.fname+" "+this.lname;
+                }
+            };
+            person1.city = "Ahmednagar";
+			document.write("<h3> Full name of the person is: "+person1.fullName()+"</h3>");
+			document.write("<h4>After adding city property into person1 object: "+person1.city+"</h4>");
+        </script>
+    </body>
+</html>

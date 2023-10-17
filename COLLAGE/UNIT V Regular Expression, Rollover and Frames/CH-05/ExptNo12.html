@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title>Expt. No. 12</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function validateForm(){
+				let userName = document.firstForm.txtName.value;
+				let namePattern = /[a-zA-Z]{3}/;
+				let nameResult = userName.match(namePattern);
+				if(nameResult == null){
+					alert("Please enter correct name.");
+				}
+				else{
+					let userMobile = document.firstForm.txtMobile.value;
+					let mobilePattern = /^\d{10}$/
+					let mobileResult = userMobile.match(mobilePattern);
+					if(mobileResult == null){
+						alert("Enter valide mobile number");
+					}
+					else{
+						let userEmail = document.firstForm.txtEmail.value;
+						let emailPattern = /[a-zA-Z0-9.$#%]+@[a-zA-Z0-9]+\.[a-zA-Z]+/; 
+						let emailResult = userEmail.match(emailPattern);
+						if(emailResult == null){
+							alert("Enter valide e-mail for registration. Ex: gpnagar@gmail.com");
+						}
+						else{
+							let userPassword = document.firstForm.txtPassword.value;
+							let passwordPattern = /[a-zA-Z0-9]{6}/
+							let passwordResult = userPassword.match(passwordPattern);
+							if(passwordResult == null){
+								alert("Enter valide password (at least six chracters/digits)");
+							}
+							else{
+								alert(userName+" congrats successfuly registered..... Your e-mail id is: "+userEmail);
+							}
+						}
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>***Expt. No. 12***</h1>
+		<h3>E-Mail Registration Form</h3>
+		<form name = "firstForm">
+			<table border = "1">
+				<tr>
+					<td>Enter Name: </td>
+					<td><input type = "text" name = "txtName"></td>
+				</tr>
+				<tr>
+					<td>Enter Mobile No.: </td>
+					<td><input type = "text" name = "txtMobile"></td>
+				</tr>
+				<tr>
+					<td>Enter E-Mail: </td>
+					<td><input type = "text" name = "txtEmail"></td>
+				</tr>
+				<tr>
+					<td>Enter Password: </td>
+					<td><input type = "password" name = "txtPassword"></td>
+				</tr>
+				<tr>
+					<td><input type = "submit" value = "Create" onClick = "validateForm();"></td>
+				</tr>
+			</table>
+		</form>
+
+	</body>
+</html>

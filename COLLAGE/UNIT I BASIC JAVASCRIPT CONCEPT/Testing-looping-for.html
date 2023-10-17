@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Switch Demo</title>
+	</head>
+	<body>
+		<script language = "JavaScript" type = "text/javascript">
+			var studentName = ["Sandip", "Om", "Aditya", "Ankush"];
+			for (var i = 0;i<studentName.length;i++){
+				document.write("<h3>Name: "+(i+1)+" is "+studentName[i]+"</h3>");
+			}
+
+			document.write("Following content using For ---in");
+			
+			for(var x in studentName){
+				document.write("<h3>Name: "+(parseInt(x)+1)+" is "+studentName[x]+"</h3>")
+			}
+
+			var person = {
+				fname: "Om",
+				lname: "Varma",
+				age: 20
+			};
+			document.write("Printing object properties using For ---in");
+			
+			for (var x in person){
+				document.write("<h3>"+person[x]+"</h3>");
+			}
+
+		</script>
+	</body>
+</html>

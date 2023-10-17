@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>First RegExpression Program</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function searchString(){
+				let readString = prompt("Enter String","");
+				let pattern = new RegExp("government","i"); 
+				let result = readString.match(pattern);
+				if(result == null){
+					alert("Pattern is not found in the entered string by user.");
+				}
+				else{
+					alert(result+" is found in the entered string by user.");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>***Demonstration of Regular Expression (Search String)***</h1>
+		<h3>Find a substring into the entered string by user after clicking on the following button</h3>
+		<form name = "firstForm">
+			<input type = "button" value = "Search String" onClick = "searchString();">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>Key Event</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function myFunction(){
+				var name = document.forms[0].txtName.value;
+				alert("User has entered name as: "+name);
+			}	
+		</script>
+	</head>
+	<body>
+		<h1>***Form Object Acessing Demonstration***</h1>
+		<form name = "firstForm">
+			<b>Enter Name: </b1> <input type = "text" name = "txtName">
+			<input type = "button" name = "btnSubmit" value = "Click Me!!" onClick = "myFunction();">
+		</form>
+	</body>
+</html>

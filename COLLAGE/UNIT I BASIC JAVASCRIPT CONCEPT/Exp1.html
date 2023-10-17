@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<title>Expt. No. 1</title>
+	</head>
+	<body>
+		<h1>Demonstration of Arithmetic Operators</h1>
+		<table border = "1">
+			<cpation>Table: Arithmetic Operators</caption>
+			<tr>
+				<th>Name</th><th>Operator</th>
+			</tr>
+			<tr>
+				<td>Plus/Add</td><td>+</td>
+			</tr>
+			<tr>
+				<td>Concat (For Strings)</td><td>+</td>
+			</tr>
+			<tr>
+				<td>Minus/Substract</td><td>-</td>
+			</tr>
+			<tr>
+				<td>Multiply</td><td>*</td>
+			</tr>
+			<tr>
+				<td>Divide</td><td>/</td>
+			</tr>
+			<tr>
+				<td>Increment</td><td>++</td>
+			</tr>
+			<tr>
+				<td>Decrement</td><td>--</td>
+			</tr>
+		</table>
+		<script language = "JavaScript" type = "text/javascript">
+			document.write("<h3>Perform Addition and concatnation using + symbol</h3>");
+			var a = 7;
+			var b = 5;
+			var add = a + b;
+			var msg = "With the plus symbol," + " we can concat strings."; 
+			document.write("<h4>Addition of "+a+" and "+b+" is "+add+"</h4>");
+			document.write("<h4>Concat string is: "+msg+"</h4><hr>");
+
+			document.write("<h3>Perform Substraction using - symbol</h3>");
+			var a = 7;
+			var b = 5;
+			var sub = a - b;
+			document.write("<h4>Substraction of "+a+" and "+b+" is "+sub+"</h4><hr>");
+
+			document.write("<h3>Perform Multiplication using * symbol</h3>");
+			var a = 7;
+			var b = 5;
+			var mul = a * b;
+			document.write("<h4>Multiplication of "+a+" and "+b+" is "+mul+"</h4><hr>");
+
+			document.write("<h3>Perform Division using / symbol</h3>");
+			var a = 7;
+			var b = 5;
+			var div = a / b;
+			document.write("<h4>Division of "+a+" and "+b+" is "+div+"</h4><hr>");
+
+
+			document.write("<h3>Perform Increment using ++ symbol</h3>");
+			var a = 7;
+			var b = 7;
+			document.write("<h4>Before increment value of a and b are "+a+" and "+b+", respectively </h4>");
+			
+			
+			var preIncrementA  = ++a;
+			var postIncrementB = b++;
+
+			
+			
+			document.write("<h4>PreIcrementA value is "+preIncrementA+"</h4>");
+			document.write("<h4>PostIcrementB value is "+postIncrementB+"</h4><br>");
+			document.write("<h4>After increment a: "+a+" b: "+b+"</h4>");
+
+
+			document.write("<h3>Perform Decrement using -- symbol</h3>");
+			var a = 7;
+			var b = 7;
+			document.write("<h4>Before decrement value of a and b are "+a+" and "+b+", respectively </h4>");
+			
+			
+			var preDecrementA  = --a;
+			var postDecrementB = b--;
+
+			
+			
+			document.write("<h4>PreDerementA value is "+preDecrementA+"</h4>");
+			document.write("<h4>PostDerementB value is "+postDecrementB+"</h4><br>");
+
+			document.write("<h4>After decrement a: "+a+" b: "+b+"</h4>");
+
+		</script>
+		
+	</body>
+</html>

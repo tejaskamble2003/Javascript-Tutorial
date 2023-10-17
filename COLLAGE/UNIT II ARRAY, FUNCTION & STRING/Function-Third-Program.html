@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script langauge = "JavaScript" type = "text/javascript">
+			var a = 7;
+			function callA(){
+				document.write("<h2>In function callA(): The value of a is "+a+"</h2><br>");
+				a  = 70;
+				callB();
+			}
+			function callB(){
+				document.write("<h2>In function callB(): The value of a is "+a+"</h2>");
+			}
+		</script>
+	</head>
+	<body>
+		<h2>***Function demonstration (Calling one function from another function()) ***</h2>
+		<script language = "JavaScript" type = "text/javascript">
+			callA();
+			
+		</script>	
+	</body>
+</html>

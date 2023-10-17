@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Dynamic Message for Status Bar</title>
+		<script language = "JavaScript" type = "text/javascript">
+			let currectPosition = 0;
+			let targetPosition = 100;
+			let blanks = "";
+		
+			function scrollingMessage(){
+				window.setInterval(display,1000);
+			} 
+			function display(){
+				window.status = blanks+"Scrolling Message";
+				currentPosition++;
+				blanks += " ";
+				if(currentPosition>targetPosition){
+					currentPosition = 0
+					blanks = "";
+				}				
+			}
+		</script> 
+	</head>
+	<body onLoad = "scrollingMessage();">
+	</body>
+</html>                                                                                               

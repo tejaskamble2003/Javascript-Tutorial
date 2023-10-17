@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title>Demonstration of Timers (setTimeout)</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function myFunction(){
+				document.getElementById("demo").innerHTML += "<b>Message<b><br>"; 		
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Demonstration of Timers: setInterval(function, ms)</h1>
+		<p id = "demo"></p>
+		<form name = "firstForm">
+			<input type = "button" value = "Generate Alert" onClick = "setInterval(myFunction,5000);">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Expt. No. 14</title>
+		<script language = "JavaScript" type = "text/javascript">
+			BoysList = new Array("Bhushan","Sandip","Prashant","Vivek");
+			GirlsList = new Array("Maahi","Shivadnya","Neha","Krutika");
+			function changeList(ch){
+				for(i=document.firstForm.Students.options.length-1;i>0;i--){
+					document.firstForm.Students.options.remove(i)
+				}
+				category = ch.options[ch.selectedIndex].value;
+				if(category != ""){
+					if(category=="1"){
+						for(i=1;i<=BoysList.length;i++){
+							document.firstForm.Students.options[i] = new Option(BoysList[i-1]);
+						}
+					}
+					if(category=="2"){
+						for(i=1;i<=GirlsList.length;i++){
+							document.firstForm.Students.options[i] = new Option(GirlsList[i-1]);
+						}
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>***Expt. No. 14***</h1>
+		<form name = "firstForm">
+			<select name = "lists"  onChange = "changeList(this);">
+				<option value ="0">Class</option>
+				<option value="1">Boys</option>
+				<option value="2">Girls</option>
+			</select>
+			<select name = "Students">
+				<option value = "0">Students</option>
+			</select>
+		</form>
+	</body>
+</html>

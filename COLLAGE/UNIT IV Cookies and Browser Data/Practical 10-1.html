@@ -1,0 +1,30 @@
+<html>  
+	<head>
+		<title>Expt. No. 10 (Program-1)</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function setCookies(){
+				var userName = document.firstForm.txtUserName.value;
+				document.cookie = "userName="+userName;
+				alert("Congradulations!!! Session Cookie has been created.");
+			}
+			function getCookies(){
+				if(document.cookie.length == 0){
+					alert("Cookies not available");
+				}
+				else{
+					alert("The session cookie is set in the browser as : "+document.cookie);
+				}
+			}
+		</script>
+	</head>  
+	<body>  
+		<h1>***Expt. No. 10 (Set and Get Session Cookie)***</h1>
+		<form name = "firstForm">
+			<b>Enter User Name:</b>
+			<input type = "text" name = "txtUserName" value = "Admin">
+			<br> <br>
+			<input type = "button" name = "btnSetCookie" value = "Set Session Cookie" onClick = "setCookies()">
+			<input type = "button" name = "btnGetCookie" value = "Get Cookie" onClick = "getCookies()"> 
+		</fomr>
+	</body>
+</html>

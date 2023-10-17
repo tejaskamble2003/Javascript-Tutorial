@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Rollover Example</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function myFunction(ch){
+				if(ch==1){
+					document.divide.src = "divide.png";
+					MyWindow = window.open("","NewWindow","height='400', width='400' left='600', top='100'");
+					MyWindow.document.write("This is divide operation symbol.");
+				}
+				if(ch==2){
+					document.divide.src = "plus.png";
+					MyWindow = window.open("","NewWindow","height='400', width='400' left='600', top='100'");
+					MyWindow.document.write("This is addition operation symbol.");
+				}
+				if(ch==3){
+					document.divide.src = "smiley.png";
+					MyWindow = window.open("","NewWindow","height='400', width='400' left='600', top='100'");
+					MyWindow.document.write("This is smiley symbol.");
+				}
+				if(ch==4){
+					document.divide.src = "minus.png";
+					MyWindow = window.open("","NewWindow","height='400', width='400' left='600', top='100'");
+					MyWindow.document.write("This is substraction operation symbol.");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>***Text Rollover Demonstration***</h1>
+		<table>	
+			<tr>	
+				<td>	
+					<img src = "divide.png" name = "divide">
+				</td>
+				<td>
+					<a onMouseOver = "myFunction(1);" onMouseOut="MyWindow.close();">
+						<b>Divide</b>
+					</a> <br><br>
+					
+					<a onMouseOver = "myFunction(2);" onMouseOut="MyWindow.close();">
+						<b>Plus</b>
+					</a> <br><br>
+					<a onMouseOver = "myFunction(3);" onMouseOut="MyWindow.close();">
+						<b>Smiley</b>
+					</a> <br><br>
+					<a onMouseOver = "myFunction(4);" onMouseOut="MyWindow.close();">
+						<b>Minus</b>
+					</a>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

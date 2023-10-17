@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>First Event Handler Program</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function changeColor(ele,clr){
+				ele.style.color = clr;
+			}
+		</script>
+	</head>
+	<body>
+		<h1>***Event Handling Demonstration***</h1> <hr>
+		<a href = "http://www.gpnagar.ac.in" onMouseOver = "window.alert('You Have moved your mouse on this link!!!!!');"> Click Here!! For opening gpnagar website!!!
+		</a>
+		<hr>
+
+		<h3 onMouseOver="style.color = 'red'" onMouseOut = "style.color = 'blue'"> Moving mouse over this text!!!</h3>
+
+		<hr>
+		<p onMouseDown = "changeColor(this,'red')" onMouseUp = "changeColor(this,'blue')">Click the mouse button (down/up) to change the color of this paragraph
+		</p>
+
+
+	</body>
+</html>

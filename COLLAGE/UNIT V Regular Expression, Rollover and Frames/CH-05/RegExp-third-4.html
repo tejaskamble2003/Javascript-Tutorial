@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script language = "JavaScript" type = "text/javascript">
+			function checkDigit(){
+				let readString = prompt("Enter String: ","");
+				let pattern = /[^0-9]/;
+				if(pattern.test(readString)){
+					alert("String does not contains digit(s)");
+				} 
+				else{
+					alert("Digit(s) are available into the given string");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>***Demonstration of Reg. Expression***</h1>
+		<h3>Click on the following button</h3>
+		<form name = "firstForm">
+			<input type = "button" value = "Click Me!!!" onClick = "checkDigit();">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<html> 
+	<head>
+		<title>Open Website</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function creatingChildWindow(){
+				let newWindow = window.open("","NewWindow","width=400,height=400,left=200,top=200");
+				newWindow.document.write("<p>We are writing into child</p>");
+				
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Crete a child window by clicking on the following button</h1>
+		
+		<form name = "firstForm">
+			<input type = "button" value ="Create a Child Window" onClick = "creatingChildWindow();">
+		</form>
+	</body>
+</html>

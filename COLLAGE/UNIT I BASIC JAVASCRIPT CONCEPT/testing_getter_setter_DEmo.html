@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Switch Demo</title>
+	</head>
+	<body>
+		<script language = "JavaScript" type = "text/javascript">
+			let person= {
+				fname: "Bhushan",
+				lname: "Karad",
+				age: 23,
+				get getOfPerson(){
+					return this.age;
+				},
+				set setLname(name){
+					this.lname = name;
+				} 
+			};
+
+			document.write("Get value using getter properties: "+person.getOfPerson);			
+			person.setLname = "Pawar";
+			document.write("<br>Set value using setter properties: "+person.lname); 
+		</script>
+	</body>
+</html>

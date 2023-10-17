@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Expt. No. 5</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function performStringOperation(){
+				let readString = prompt("Enter string to perform various operation:","Government Polytechnic Ahmednagar");
+				document.write("<h1>***Perform various operation on entered string***</h1>");
+				document.write("<h1>Enterd String is: "+readString+"</h1><hr>");
+
+				document.write("<h2>Convert entered string into Upper case (toUppperCase()):</h2>");	
+				var changeString = readString.toUpperCase();
+				document.write("<h3>Upper case string is: "+changeString+"</h3>");
+				
+				document.write("<hr><h2>Convert entered string into Lower case (toLowerCase()):</h2>");	
+				changeString = readString.toLowerCase();
+				document.write("<h3>Lower case string is: "+changeString+"</h3>");	
+
+				document.write("<hr><h2>Get a character from the entered string at index 2:</h2>");	
+				changeString = readString.charAt(2);
+				document.write("<h3>Character at index 2 in the entered string is: "+changeString+"</h3>");
+
+				document.write("<hr><h2>Extract a particular part of the entered string using slice():</h2>");	
+				changeString = readString.slice(11,23);
+				document.write("<h3>Extracted string is: "+changeString+"</h3>");
+
+				document.write("<hr><h2>Extract a particular part of the entered string using substring():</h2>");	
+				changeString = readString.substring(0,11);
+				document.write("<h3>Extracted string is: "+changeString+"</h3>");
+			
+				document.write("<hr><h2>Split the entered string using split():</h2>");	
+				changeString = readString.split(" ");
+				for(var i = 0; i < changeString.length; i++){
+					document.write("<h3>"+(i+1)+" part of entered string is "+changeString[i]+"</h3>")
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Please enter string by clicking on the following button:</h1>
+		<button onclick = "performStringOperation()">Click Me!!!</button>
+	</body>
+</html>

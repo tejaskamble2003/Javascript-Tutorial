@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Expt. No. 08</title>
+		<script language = "JavaScript" type = "text/javascript">
+			function changeList(v){
+				if(v == 1){
+					document.firstForm.list[0].text = "Computer Engineering";
+					document.firstForm.list[0].value = 1
+
+					document.firstForm.list[1].text = "Computer technology";
+					document.firstForm.list[1].value = 2
+
+					document.firstForm.list[2].text = "Mechnical Engineering";
+					document.firstForm.list[3].value = 3
+				}
+				if(v == 2){
+					document.firstForm.list[0].text = "Government polytechnic, Ahmednagar";
+					document.firstForm.list[0].value = 1
+
+					document.firstForm.list[1].text = "Government polytechnic, Nashik";
+					document.firstForm.list[1].value = 2
+
+					document.firstForm.list[2].text = "Government polytechnic, Pune";
+					document.firstForm.list[3].value = 3
+				}
+				if(v == 3){
+					document.firstForm.list[0].text = "First Year";
+					document.firstForm.list[0].value = 1
+					document.firstForm.list[1].text = "Second Year";
+					document.firstForm.list[1].value = 2
+					document.firstForm.list[2].text = "Third Year";
+					document.firstForm.list[3].value = 3
+				}
+			}	
+		</script>
+	</head>
+	<body>
+		<h1>***Expt. No. 08: Create three categories using radio button and handle onclick event on that. Further, dynamically changed dropdown list while selecting radio button***</h1>
+		<form name = "firstForm">
+			<input type = "radio" name = "category" value = 1 checked onClick = "changeList(this.value);"> Department
+			<input type = "radio" name = "category" value = 2 onClick = "changeList(this.value);">Institute
+			<input type = "radio" name = "category" value = 3 onClick = "changeList(this.value);">Classes
+			<br><br>
+			<b>The elements in the dropdown list are: </b>
+			<select name = "list">	
+				<option value = 1> Computer Engineering
+				<option value = 2> Computer Technology
+				<option value = 3> Mechanical Engineering
+			</select>
+		</form>
+	</body>
+</html>

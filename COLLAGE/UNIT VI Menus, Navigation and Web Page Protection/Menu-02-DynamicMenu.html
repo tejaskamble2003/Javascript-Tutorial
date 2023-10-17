@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Menu Demonstration: Dynamic</title>
+		<script language = "JavaScript" type = "text/javascript">
+			BoysList = new Array("Jayesh","Piyush","Vivek","Prashant");
+			GirlsList = new Array("Shivadnya", "Ovi", "Maahi", "Sanjana");
+			function changeList(ele){
+				for(i = document.firstForm.studentList.options.length-1;i>0;i--){
+					document.firstForm.studentList.options.remove(i);
+				}
+				category = ele.options[ele.selectedIndex].value;
+				if(category!=""){
+					if(category== "1"){
+						for(i=1;i<=BoysList.length;i++){
+							document.firstForm.studentList.options[i] = new Option(BoysList[i-1]);
+						}	
+					}
+					if(category == "2"){
+						for(i=1;i<=GirlsList.length;i++){
+							document.firstForm.studentList.options[i] = new Option(GirlsList[i-1]);
+						}
+						
+					}	
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>***Menu Demonstration: Dynamically update Menu list***</h1>
+		<form name = "firstForm">
+			<select name = "classMenu" onChange = "changeList(this);">
+				<option value = "0">Class</option>
+				<option value = "1">Boys</option>
+				<option value = "2">Girls</option>
+			</select>
+			<select name = "studentList">
+				<option value = "0">Student List</option>
+			</select>
+		</form>
+	</body>
+</html>

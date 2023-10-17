@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Rollover Example</title>
+		<script language = "JavaScript" type = "text/javascript">
+			RollImage = new Array();
+			RollImage[0] = new Image(100, 100);
+			RollImage[0].src = "divide.png";
+			RollImage[1] = new Image(100, 100);
+			RollImage[1].src = "plus.png";
+			RollImage[2] = new Image(100, 100);
+			RollImage[2].src = "smiley.png";
+			RollImage[3] = new Image(100, 100);
+			RollImage[3].src = "minus.png";
+		</script>
+	</head>
+	<body>
+		<h1>***Efficient Rollover Demonstration (By storing images reference into Array)***</h1>
+		<table>	
+			<tr>	
+				<td>	
+					<img src = "divide.png" name = "divide">
+				</td>
+				<td>
+					<a onMouseOver = "document.divide.src=RollImage[0].src">
+						<b>Divide</b>
+					</a> <br><br>
+					
+					<a onMouseOver = "document.divide.src=RollImage[1].src">
+						<b>Plus</b>
+					</a> <br><br>
+					<a onMouseOver = "document.divide.src=RollImage[2].src">
+						<b>Smiley</b>
+					</a> <br><br>
+					<a onMouseOver = "document.divide.src=RollImage[3].src">
+						<b>Minus</b>
+					</a>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

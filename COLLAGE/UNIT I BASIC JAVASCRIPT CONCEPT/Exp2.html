@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Expt. No. 2</title>
+	</head>
+	<body>
+		<h2>Read one number from user by clicking on the following button:</h2>
+		<button onclick = "myFunction()">Read Number</button>
+		<p id = "pid"></p>
+		<p id = "pid1"></p>	
+		
+		<script language = "JavaScript" type = "text/javascript">
+			function myFunction(){
+				let text;
+				let rem, rev = 0;
+				let number = parseInt(window.prompt("Enter one number (try to enter more than two digit)","234"));
+				
+				if(number==null||number==""){
+					text = "You have not entered number or clicked on cancel button.";
+				}
+				else{
+					while(number>0){
+						rem = number%10;
+						rem = parseInt(rem);
+						rev = rev*10 + rem;
+						number = number/10
+						number = parseInt(number)
+					}
+				}	
+				document.getElementById("pid").innerHTML = "The reverse number is "+rev;			
+				var msg;
+				if (rev%2 == 0)
+				{
+					msg = "Even number";
+				}
+				else{
+					msg = "Odd number";
+				}
+				document.getElementById("pid1").innerHTML = msg;
+			}
+		</script>
+	</body>
+</html>
